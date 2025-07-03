@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
   </head>
+  <header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">KOSTEM_MY</a>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <body>
-    {{ content }}
+    <main>
+      {{ content }}
+    </main>
 
-    <footer style="text-align: center; padding: 2em 0; font-size: 0.9em; color: #888;">
+    <footer>
       &copy; {{ site.time | date: "%Y" }} KOSTEM_MY. All rights reserved.
     </footer>
   </body>
