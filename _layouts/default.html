@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ site.description | escape }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-    <link rel="icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
-  </head>
-  <header class="site-header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="{{ " /assets/images/favicon.ico" | relative_url }}">
+</head>
+<header class="site-header">
   <div class="container">
     <div class="logo">
-      <a href="/">KOSTEM</a>
+      <a href="/">
+        <img src="{{ '/assets/images/kostem.svg' | relative_url }}" alt="KOSTEM Logo" />
+      </a>
     </div>
+
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <nav class="site-nav">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <!--li><a href="#pricing">Pricing</a></li-->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -28,13 +32,14 @@
   </div>
 </header>
 
-  <body>
-    <main>
-      {{ content }}
-    </main>
+<body>
+  <main>
+    {{ content }}
+  </main>
 
-    <footer>
-      &copy; {{ site.time | date: "%Y" }} Koperasi Sumber Terbuka Selangor Bhd (KOSTEM) — All rights reserved.
-    </footer>
-  </body>
+  <footer>
+    &copy; {{ site.time | date: "%Y" }} Koperasi Sumber Terbuka Selangor Bhd (KOSTEM) — All rights reserved.
+  </footer>
+</body>
+
 </html>

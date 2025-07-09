@@ -1,3 +1,11 @@
+.logo img {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
 /* Basic nav styles */
 .site-header {
   background: #fff;
