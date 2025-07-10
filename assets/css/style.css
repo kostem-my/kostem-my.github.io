@@ -1,12 +1,6 @@
-.logo img {
-  height: 40px;
-  width: auto;
-  max-width: 100%;
-  display: block;
-}
+/* default.html */
 
-
-/* Basic nav styles */
+/* Basic nav style */
 .site-header {
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -27,6 +21,13 @@
   font-weight: bold;
   font-size: 24px;
   color: #333;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .site-nav ul {
@@ -107,8 +108,9 @@
 
 
 
-/* Hero style */
+/* index.html */
 
+/* Hero style */
 .hero {
   background: #f7f7f7;
   padding: 60px 20px;
@@ -127,11 +129,13 @@
   margin-bottom: 30px;
 }
 
+/*
 .hero h1 {
   font-size: 36px;
   color: #333;
   line-height: 1.2;
 }
+*/
 
 @media (max-width: 768px) {
   .hero h1 {
@@ -148,11 +152,13 @@
   margin: 0 auto;
 }
 
+/*
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 20px;
   color: #333;
 }
+*/
 
 .hero-text p {
   font-size: 18px;
@@ -183,6 +189,7 @@
   max-width: 100%;
   height: auto;
 }
+
 
 
 /* About style */
@@ -291,6 +298,7 @@
   gap: 10px;
 }
 
+/*
 .section-title .bullet {
   display: inline-block;
   width: 10px;
@@ -298,6 +306,7 @@
   background: #6c63ff;
   border-radius: 50%;
 }
+*/
 
 .services-grid {
   display: grid;
@@ -336,6 +345,7 @@
 
 
 
+/* Pricing Style */
 .pricing {
   background: #f9f9f9;
   padding: 80px 20px;
@@ -479,7 +489,7 @@
 
 
 
-
+/* Contact Style */
 .contact {
   background: #fff;
   padding: 80px 20px;
@@ -504,6 +514,7 @@
   font-weight: bold;
 }
 
+/*
 .section-title .bullet {
   width: 10px;
   height: 10px;
@@ -511,6 +522,7 @@
   border-radius: 50%;
   display: inline-block;
 }
+*/
 
 .contact-description {
   font-size: 18px;
@@ -571,7 +583,7 @@
 
 
 
-
+/* Body Styles */
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
